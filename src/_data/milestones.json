@@ -2,19 +2,16 @@
   "curatedOnly": true,
   "items": [
     {
-      "date": "2026-07-29",
-      "title": "Defined Studio-Lab Site Direction",
-      "summary": "Finalized static-first architecture, JSON data model, and single-template generation strategy."
+      "date": "2026-02-01",
+      "title": "Pokerdoro (Gamify) Went Live",
+      "summary": "Launched Gamify, a poker-themed Pomodoro productivity app with chip rewards and rank progression.",
+      "link": "https://www.pokerdoro.com/"
     },
     {
-      "date": "2026-07-31",
-      "title": "Mapped Core Portfolio Entities",
-      "summary": "Documented project, website, and milestone fields for durable long-term content authoring."
-    },
-    {
-      "date": "2026-08-02",
-      "title": "Prepared OpenSpec Change Set",
-      "summary": "Completed proposal, design, tasks, and capability requirements for implementation."
+      "date": "2026-08-01",
+      "title": "Math Landscapes Went Live",
+      "summary": "Launched Math Landscapes, an interactive MSC2020-based reference site for exploring mathematics.",
+      "link": "https://www.mathlandscapes.com"
     }
   ]
 }

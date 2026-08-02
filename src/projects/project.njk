@@ -41,7 +41,7 @@ title: "{{ project.title }}"
     </div>
 
     <h2 class="section-title">Links</h2>
-    <ul>
+    <ul class="mono-list">
       {% if project.links.repo %}<li><a href="{{ project.links.repo }}">Repository</a></li>{% endif %}
       {% if project.links.demo %}<li><a href="{{ project.links.demo }}">Demo / Download</a></li>{% endif %}
       {% if project.links.writeup %}<li><a href="{{ project.links.writeup }}">Write-up</a></li>{% endif %}
