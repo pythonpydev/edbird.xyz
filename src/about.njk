@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+title: About
+permalink: /about/index.html
+---
+<section class="hero">
+  <h1 class="brand-name">About</h1>
+  <p class="role-line">{{ profile.role }}</p>
+  <p class="bio-text">{{ profile.bioShort }}</p>
+</section>
+
+<section class="split">
+  <article class="panel">
+    <h2 class="section-title">Career</h2>
+    <p class="bio-text">{{ profile.careerNarrative }}</p>
+
+    <h2 class="section-title">Current Focus</h2>
+    <p class="bio-text">{{ profile.focusNow }}</p>
+
+    <h2 class="section-title">Research Interests</h2>
+    <ul class="mono-list">
+      {% for item in profile.researchInterests %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+
+  <article class="panel">
+    <h2 class="section-title">Academic Qualifications</h2>
+    <ul class="mono-list">
+      {% for item in profile.qualifications %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+</section>

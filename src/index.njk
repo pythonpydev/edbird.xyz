@@ -1,0 +1,58 @@
+---
+layout: layouts/base.njk
+title: Home
+description: Deputy Dean at University College Birmingham, with a background in computing, software development, and postgraduate research.
+---
+<section class="hero">
+  <p class="badge">{{ site.tagline }}</p>
+  <h1 class="brand-name">{{ profile.name }}</h1>
+  <p class="role-line">{{ profile.role }}</p>
+  <p class="bio-text">{{ profile.bioShort }}</p>
+</section>
+
+<section>
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="grid">
+    {% for project in projects.items | featuredProjects %}
+      <article class="card span-6">
+        <h3><a href="/projects/{{ project.slug }}/">{{ project.title }}</a></h3>
+        <p class="tagline">{{ project.tagline }}</p>
+        <p class="meta-line"><strong class="status-{{ project.status }}">{{ project.status }}</strong> · {{ project.year }}</p>
+        <div class="stack">
+          {% for item in project.stack %}
+            <span>{{ item }}</span>
+          {% endfor %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+  <p class="meta-line"><a href="/projects/">View all projects →</a></p>
+</section>
+
+<section>
+  <h2 class="section-title">Curated Milestones</h2>
+  <div class="grid">
+    {% for milestone in milestones.items %}
+      <article class="card span-4">
+        <h3>{{ milestone.title }}</h3>
+        <p class="meta-line"><strong>{{ milestone.date }}</strong></p>
+        <p class="tagline">{{ milestone.summary }}</p>
+        {% if milestone.link %}<p class="meta-line"><a href="{{ milestone.link }}">Related link</a></p>{% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Linked Websites</h2>
+  <div class="grid">
+    {% for website in websites.items %}
+      <article class="card span-4">
+        <h3><a href="{{ website.url }}">{{ website.name }}</a></h3>
+        <p class="tagline">{{ website.purpose }}</p>
+        <p class="meta-line">{{ website.audience }}</p>
+      </article>
+    {% endfor %}
+  </div>
+  <p class="meta-line"><a href="/websites/">View all websites →</a></p>
+</section>

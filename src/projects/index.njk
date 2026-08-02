@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Projects
+permalink: /projects/index.html
+---
+<section class="hero">
+  <h1 class="brand-name">Projects</h1>
+  <p class="bio-text">Selected builds with practical outcomes and explicit tradeoffs.</p>
+</section>
+
+<section class="grid">
+  {% for project in projects.items | projectsByPriority %}
+    <article class="card span-6">
+      <h2><a href="/projects/{{ project.slug }}/">{{ project.title }}</a></h2>
+      <p class="tagline">{{ project.tagline }}</p>
+      <p class="meta-line"><strong class="status-{{ project.status }}">{{ project.status }}</strong> · {{ project.year }}</p>
+      <div class="stack">
+        {% for item in project.stack %}
+          <span>{{ item }}</span>
+        {% endfor %}
+      </div>
+    </article>
+  {% endfor %}
+</section>

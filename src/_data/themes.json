@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "slug": "rollerball-1975",
+      "name": "Houston '75",
+      "description": "Dystopian arena interface with brutal contrast, hard silver framing, and aggressive Houston orange signals.",
+      "palette": {
+        "bg": "#0B0C10",
+        "surface": "#101319",
+        "text": "#F5F5F7",
+        "muted": "#C0C0C0",
+        "accent": "#FF5500",
+        "accentAlt": "#C0C0C0",
+        "border": "#C0C0C0"
+      }
+    },
+    {
+      "slug": "emergency-broadcast-analog",
+      "name": "Emergency Broadcast Analog",
+      "description": "CRT-era emergency bulletin styling with analog scanlines, text bleed, and broadcast jitter.",
+      "palette": {
+        "bg": "#000000",
+        "surface": "#000080",
+        "text": "#FFFFFF",
+        "muted": "#E6E6E6",
+        "accent": "#FF0000",
+        "accentAlt": "#FFFF00",
+        "border": "#000000"
+      }
+    },
+    {
+      "slug": "soylent-green-1973",
+      "name": "Green '73",
+      "description": "Muted dystopian interface anchored by Soylent Green #578363 with concrete grays and institutional warning accents.",
+      "palette": {
+        "bg": "#131814",
+        "surface": "#1D2720",
+        "text": "#F1F3EE",
+        "muted": "#9BA59C",
+        "accent": "#578363",
+        "accentAlt": "#D9A441",
+        "border": "#5D6960"
+      }
+    },
+    {
+      "slug": "hitchhikers-vector-neon-1981",
+      "name": "Hiker '81",
+      "description": "Rod Lord-inspired vector monitor look with glowing wireframe lines, phosphor text, and friendly DON'T PANIC blue.",
+      "palette": {
+        "bg": "#0D0D11",
+        "surface": "#12151A",
+        "text": "#39FF14",
+        "muted": "#8AEF7A",
+        "accent": "#00D2FF",
+        "accentAlt": "#FFD300",
+        "border": "#39FF14"
+      }
+    },
+    {
+      "slug": "thx1138-mainframe",
+      "name": "Mainframe",
+      "description": "Sterile, oppressive surveillance terminal aesthetic with rigid data grids, monochrome contrast, and clinical control states.",
+      "palette": {
+        "bg": "#000000",
+        "surface": "#0B0B0B",
+        "text": "#FFFFFF",
+        "muted": "#8A8A8A",
+        "accent": "#FF3333",
+        "accentAlt": "#FFFFFF",
+        "border": "#444444"
+      }
+    },
+    {
+      "slug": "thx1138-clinical-terminal",
+      "name": "Clinical Terminal",
+      "description": "White-screen clinical terminal variant with sterile documentation surfaces, rigid bureaucracy, and machine-room precision.",
+      "palette": {
+        "bg": "#FFFFFF",
+        "surface": "#F7F7F7",
+        "text": "#000000",
+        "muted": "#6F6F6F",
+        "accent": "#FF3333",
+        "accentAlt": "#000000",
+        "border": "#B5B5B5"
+      }
+    }
+  ]
+}

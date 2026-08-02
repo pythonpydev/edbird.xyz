@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "slug": "gpg-encryptor",
+      "title": "GPG Encryptor",
+      "tagline": "A point-and-click Tkinter GUI for encrypting and decrypting files and folders with GPG.",
+      "status": "active",
+      "stack": ["Python", "Tkinter", "GPG", "pipx"],
+      "problem": "Encrypting and decrypting files with GPG from the command line is error-prone for routine, repeated tasks like backups and one-off file sharing.",
+      "approach": "Built a desktop GUI on top of GPG supporting recipient, password, and tar-password encryption modes, plus matching decrypt and tar-restore workflows, with dry-run previews and progress tracking. Packaged for one-command installation via pipx with a native desktop launcher.",
+      "outcome": "A self-contained Linux desktop app installable with a single script, giving GPG encryption a proper GUI instead of remembering flag combinations.",
+      "lessons": "Wrapping a well-understood CLI tool in a GUI is mostly about surfacing the right defaults and safety nets (dry runs, overwrite checks) rather than reinventing the underlying tool.",
+      "year": 2026,
+      "featured": true,
+      "links": {
+        "writeup": "https://edbird.xyz/assets/downloads/gpg-encryptor/README.md",
+        "demo": "https://edbird.xyz/assets/downloads/gpg-encryptor/install.sh"
+      }
+    }
+  ]
+}

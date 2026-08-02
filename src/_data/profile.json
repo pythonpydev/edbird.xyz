@@ -1,0 +1,29 @@
+{
+  "name": "Ed Bird",
+  "role": "Higher Education",
+  "location": "Birmingham, United Kingdom",
+  "bioShort": "Working in Higher Education with a background in computing and management.",
+  "careerNarrative": "I began my career in management, before studying computing and working in software development. I then went on to study postgraduate qualifications in Computer Science and an MBA, and have managed computing, management, and business departments in the education sector, both in Further and Higher Education.",
+  "qualifications": [
+    "BSc Computer Studies",
+    "MSc Computer Science",
+    "MBA",
+    "PGCE",
+    "Senior Fellow of the Higher Education Academy"
+  ],
+  "researchInterests": [
+    "Business processes",
+    "AI in education"
+  ],
+  "focusNow": "Working in higher education, with a continued focus on computing.",
+  "contact": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/pythonpydev"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:ed.bird01@gmail.com"
+    }
+  ]
+}

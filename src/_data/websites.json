@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "name": "Math Landscapes",
+      "url": "https://www.mathlandscapes.com",
+      "purpose": "Interactive, hierarchical reference site organizing mathematics via the MSC2020 classification system, with mind maps, indices, learning paths, and open textbook collections.",
+      "audience": "Mathematics students, educators, and researchers.",
+      "relationshipToEdbird": "Independent project demonstrating knowledge organization, information architecture, and educational platform design.",
+      "status": "active"
+    },
+    {
+      "name": "Gamify",
+      "url": "https://www.pokerdoro.com/",
+      "purpose": "A poker-themed productivity app built on the Pomodoro Technique. Timed focus sessions earn poker chips based on duration and self-rated quality, with progress tracked across 12 poker ranks from Fish to GOAT.",
+      "audience": "Students, developers, writers, and anyone using timed focus sessions to build productivity habits.",
+      "relationshipToEdbird": "Independent project demonstrating gamification design, habit-formation mechanics, and full-stack app development with Supabase auth.",
+      "status": "active"
+    }
+  ]
+}

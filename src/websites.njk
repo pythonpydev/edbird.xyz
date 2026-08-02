@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: Websites
+permalink: /websites/index.html
+---
+<section class="hero">
+  <h1 class="brand-name">Websites</h1>
+  <p class="bio-text">Connected properties in the same software ecosystem.</p>
+</section>
+
+<section class="grid">
+  {% for website in websites.items %}
+    <article class="card span-4">
+      <h2><a href="{{ website.url }}">{{ website.name }}</a></h2>
+      <p class="tagline">{{ website.purpose }}</p>
+      <p class="meta-line"><strong>Audience:</strong> {{ website.audience }}</p>
+      <p class="meta-line"><strong>Role:</strong> {{ website.relationshipToEdbird }}</p>
+      <p class="meta-line status-{{ website.status }}">{{ website.status }}</p>
+    </article>
+  {% endfor %}
+</section>

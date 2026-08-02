@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title | safe }} | {{ profile.name }}</title>
+    <meta name="description" content="{{ (description or profile.bioShort) | safe }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body class="{{ bodyClass or '' }}">
+    <header class="site-header frame">
+      <a class="brand" href="/">{{ profile.name }}</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/websites/">Websites</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="frame">
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer frame">
+      <p>{{ profile.name }} · {{ profile.role }}</p>
+      <ul class="footer-links">
+        <li><a href="/demos/">CSS theme experiments</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

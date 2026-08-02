@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Theme Demos
+permalink: /demos/index.html
+---
+<section class="hero">
+  <h1>Home Page Theme Demos</h1>
+  <p>Three studio-lab palette variations based on your references.</p>
+</section>
+
+<section class="grid">
+  {% for theme in themes.items %}
+    <article class="card span-4" style="animation-delay: {{ loop.index0 * 120 }}ms">
+      <h2><a href="/demos/{{ theme.slug }}/">{{ theme.name }}</a></h2>
+      <p>{{ theme.description }}</p>
+      <div class="theme-swatch" aria-hidden="true">
+        <span class="swatch" style="background: {{ theme.palette.bg }}"></span>
+        <span class="swatch" style="background: {{ theme.palette.surface }}"></span>
+        <span class="swatch" style="background: {{ theme.palette.accent }}"></span>
+        <span class="swatch" style="background: {{ theme.palette.accentAlt }}"></span>
+      </div>
+    </article>
+  {% endfor %}
+</section>

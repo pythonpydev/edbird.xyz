@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: Contact
+permalink: /contact/index.html
+---
+<section class="hero">
+  <h1 class="brand-name">Contact</h1>
+  <p class="bio-text">If a project aligns with your goals, reach out.</p>
+</section>
+
+<section class="panel">
+  <ul class="list-reset mono-list">
+    {% for method in profile.contact %}
+      <li><a href="{{ method.url }}">{{ method.label }}</a></li>
+    {% endfor %}
+  </ul>
+</section>

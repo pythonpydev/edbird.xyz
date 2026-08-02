@@ -1,0 +1,20 @@
+{
+  "curatedOnly": true,
+  "items": [
+    {
+      "date": "2026-07-29",
+      "title": "Defined Studio-Lab Site Direction",
+      "summary": "Finalized static-first architecture, JSON data model, and single-template generation strategy."
+    },
+    {
+      "date": "2026-07-31",
+      "title": "Mapped Core Portfolio Entities",
+      "summary": "Documented project, website, and milestone fields for durable long-term content authoring."
+    },
+    {
+      "date": "2026-08-02",
+      "title": "Prepared OpenSpec Change Set",
+      "summary": "Completed proposal, design, tasks, and capability requirements for implementation."
+    }
+  ]
+}
