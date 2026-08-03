@@ -48,6 +48,22 @@
       "links": {
         "repo": "https://github.com/pythonpydev/SamsCPP2005_source_code"
       }
+    },
+    {
+      "slug": "experimental-web-themes",
+      "title": "Experimental Web Themes",
+      "tagline": "CSS theme experiments exploring different visual directions and palette systems.",
+      "status": "maintained",
+      "stack": ["CSS", "Themes", "UI Experiments"],
+      "problem": "Picking a single visual direction for a site is easier with working examples to compare instead of static mockups.",
+      "approach": "Built a set of live theme demo pages that render the same home page layout against different color palettes defined in a shared themes dataset.",
+      "outcome": "A gallery of interactive theme previews used to evaluate and settle on this site's visual direction.",
+      "lessons": "Comparing full-page live renders side by side surfaces palette problems that swatches alone don't show.",
+      "year": 2026,
+      "featured": false,
+      "links": {
+        "demo": "/demos/"
+      }
     }
   ]
 }

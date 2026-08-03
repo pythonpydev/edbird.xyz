@@ -18,8 +18,9 @@ This is an Eleventy (11ty) static site with **all content sourced from JSON file
 - `src/_includes/layouts/base.njk` — the one shared layout, wrapping all pages.
 - `src/*.njk` (index, about, contact, websites) — top-level page templates that pull from `_data`.
 - `src/projects/project.njk` — a single shared template that generates one page per entry in `projects.json` via Eleventy pagination (`/projects/{slug}/`).
+- `src/projects/project-readme.njk` — paginated template that renders a project's `links.writeup` markdown file as a standalone page (`/projects/{slug}/readme/`), via the `renderMarkdownFile` shortcode. Projects without a `links.writeup` get a placeholder page.
 - `src/demos/` — theme demo pages (`/demos/`, `/demos/{theme-slug}/`) that render the home page against each palette defined in `themes.json`, used to preview color schemes.
-- `.eleventy.js` — config: passthrough copy of `src/assets` → `assets`, plus custom filters (`featuredProjects`, `projectsByPriority` sorts featured-first then by year descending, `formatYear`).
+- `.eleventy.js` — config: passthrough copy of `src/assets` → `assets`; custom filters (`featuredProjects`, `projectsByPriority` sorts featured-first then by year descending, `formatYear`); `renderMarkdownFile` shortcode (backed by `markdown-it`) that reads a markdown file from `src/<path>` and renders it to HTML, used by `project-readme.njk`.
 
 ### Adding/editing content
 
@@ -27,7 +28,7 @@ Content changes almost always mean editing a JSON file in `src/_data/`, not a te
 
 ### Routes generated
 
-`/`, `/about/`, `/projects/`, `/projects/{slug}/` (one per project, shared template), `/websites/`, `/contact/`, `/demos/`, `/demos/{theme-slug}/`.
+`/`, `/about/`, `/projects/`, `/projects/{slug}/` (one per project, shared template), `/projects/{slug}/readme/` (rendered markdown from `links.writeup`, one per project), `/websites/`, `/contact/`, `/demos/`, `/demos/{theme-slug}/`.
 
 ## Deployment
 
