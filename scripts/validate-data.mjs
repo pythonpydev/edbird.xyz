@@ -93,6 +93,17 @@ const ThemesSchema = z.object({
   items: z.array(ThemeSchema).min(3)
 });
 
+const CourseSchema = z.object({
+  title: z.string().min(1),
+  url: z.url(),
+  description: z.string().min(1)
+});
+
+const EducationSchema = z.object({
+  profileUrl: z.url(),
+  courses: z.array(CourseSchema).min(1)
+});
+
 async function readJson(relativePath) {
   const filePath = path.join(dataDir, relativePath);
   const raw = await readFile(filePath, "utf8");
@@ -114,6 +125,7 @@ async function main() {
   parseOrThrow(WebsitesSchema, await readJson("websites.json"), "websites.json");
   parseOrThrow(MilestonesSchema, await readJson("milestones.json"), "milestones.json");
   parseOrThrow(ThemesSchema, await readJson("themes.json"), "themes.json");
+  parseOrThrow(EducationSchema, await readJson("education.json"), "education.json");
   console.log("Data validation passed.");
 }
 

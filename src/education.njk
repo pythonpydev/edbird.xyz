@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Education
+permalink: /education/index.html
+---
+<section class="hero">
+  <h1 class="brand-name">Education</h1>
+  <p class="bio-text">Courses I teach on <a href="{{ education.profileUrl }}">Outschool</a>.</p>
+</section>
+
+<section class="grid">
+  {% for course in education.courses %}
+    <article class="card span-6">
+      <h2><a href="{{ course.url }}">{{ course.title }}</a></h2>
+      <p class="tagline">{{ course.description }}</p>
+    </article>
+  {% endfor %}
+</section>

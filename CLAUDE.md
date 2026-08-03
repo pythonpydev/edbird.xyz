@@ -14,9 +14,9 @@ There is no separate test suite beyond data validation, and no linter configured
 
 This is an Eleventy (11ty) static site with **all content sourced from JSON files, not markdown/frontmatter**. The site is essentially a JSON-driven templating layer:
 
-- `src/_data/*.json` — the single source of truth for content (profile, projects, websites, milestones, themes, site metadata). Every file has a matching Zod schema in `scripts/validate-data.mjs`, enforced before every dev/build run — edit the schema alongside the JSON shape.
+- `src/_data/*.json` — the single source of truth for content (profile, projects, websites, milestones, themes, education, site metadata). Every file has a matching Zod schema in `scripts/validate-data.mjs`, enforced before every dev/build run — edit the schema alongside the JSON shape.
 - `src/_includes/layouts/base.njk` — the one shared layout, wrapping all pages.
-- `src/*.njk` (index, about, contact, websites) — top-level page templates that pull from `_data`.
+- `src/*.njk` (index, about, contact, websites, education) — top-level page templates that pull from `_data`.
 - `src/projects/project.njk` — a single shared template that generates one page per entry in `projects.json` via Eleventy pagination (`/projects/{slug}/`).
 - `src/projects/project-readme.njk` — paginated template that renders a project's `links.writeup` markdown file as a standalone page (`/projects/{slug}/readme/`), via the `renderMarkdownFile` shortcode. Projects without a `links.writeup` get a placeholder page.
 - `src/demos/` — theme demo pages (`/demos/`, `/demos/{theme-slug}/`) that render the home page against each palette defined in `themes.json`, used to preview color schemes.
@@ -28,7 +28,7 @@ Content changes almost always mean editing a JSON file in `src/_data/`, not a te
 
 ### Routes generated
 
-`/`, `/about/`, `/projects/`, `/projects/{slug}/` (one per project, shared template), `/projects/{slug}/readme/` (rendered markdown from `links.writeup`, one per project), `/websites/`, `/contact/`, `/demos/`, `/demos/{theme-slug}/`.
+`/`, `/about/`, `/projects/`, `/projects/{slug}/` (one per project, shared template), `/projects/{slug}/readme/` (rendered markdown from `links.writeup`, one per project), `/websites/`, `/education/`, `/contact/`, `/demos/`, `/demos/{theme-slug}/`.
 
 ## Deployment
 

@@ -1,0 +1,15 @@
+{
+  "profileUrl": "https://outschool.com/teachers/Edward-Bird?usid=uxv4mThu&signup=true&authTrigger=follow_teacher&utm_medium=referral&utm_campaign=educator_share_leader_link",
+  "courses": [
+    {
+      "title": "Python Setup Made Easy: Get Coding on Your Computer in No Time!",
+      "url": "https://outschool.com/classes/python-setup-made-easy-get-coding-on-your-computer-in-no-time-JzBXmmfL",
+      "description": "A guided walkthrough that gets students from zero to a working Python environment on their own computer, ready to start coding."
+    },
+    {
+      "title": "An Introduction to Python: Code Your First Computer Game!",
+      "url": "https://outschool.com/classes/an-introduction-to-python-code-your-first-computer-game-EmpyMTRb",
+      "description": "A beginner-friendly introduction to Python fundamentals, taught by building a simple computer game from scratch."
+    }
+  ]
+}
