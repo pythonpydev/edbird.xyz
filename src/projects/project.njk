@@ -29,7 +29,7 @@ eleventyComputed:
     <h2 class="section-title">Outcome</h2>
     <p class="bio-text">{{ project.outcome }}</p>
 
-    <h2 class="section-title">What Changed Me</h2>
+    <h2 class="section-title">Lessons Learned</h2>
     <p class="bio-text">{{ project.lessons }}</p>
   </article>
 
@@ -45,7 +45,7 @@ eleventyComputed:
     <ul class="mono-list">
       {% if project.links.repo %}<li><a href="{{ project.links.repo }}">Repository</a></li>{% endif %}
       {% if project.links.demo %}<li><a href="{{ project.links.demo }}">Demo / Download</a></li>{% endif %}
-      {% if project.links.writeup %}<li><a href="{{ project.links.writeup }}">Write-up</a></li>{% endif %}
+      {% if project.links.writeup %}<li><a href="/projects/{{ project.slug }}/readme/">README.md</a></li>{% endif %}
     </ul>
   </aside>
 </section>

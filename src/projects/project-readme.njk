@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: projects.items
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.slug }}/readme/index.html"
+eleventyComputed:
+  title: "{{ project.title }} README"
+---
+{% if project.links and project.links.writeup %}
+  <section class="hero">
+    <p class="badge">Project document</p>
+    <h1 class="brand-name">{{ project.title }} README</h1>
+    <p class="meta-line"><a href="/projects/{{ project.slug }}/">Back to project →</a></p>
+  </section>
+
+  <section class="panel markdown-panel">
+    {% renderMarkdownFile project.links.writeup %}
+  </section>
+{% else %}
+  <section class="hero">
+    <h1 class="brand-name">{{ project.title }}</h1>
+    <p class="bio-text">No README is available for this project yet.</p>
+  </section>
+{% endif %}

@@ -347,3 +347,38 @@ a:focus-visible {
   font-family: var(--font-mono);
   font-size: 0.92rem;
 }
+
+.markdown-panel {
+  overflow-x: auto;
+}
+
+.markdown-panel > :first-child {
+  margin-top: 0;
+}
+
+.markdown-panel h1,
+.markdown-panel h2,
+.markdown-panel h3 {
+  font-family: var(--font-mono);
+  line-height: 1.25;
+}
+
+.markdown-panel pre {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 0.8rem;
+}
+
+.markdown-panel code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+.markdown-panel blockquote {
+  margin: 0.8rem 0;
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+}

@@ -16,6 +16,38 @@
         "writeup": "/assets/downloads/gpg-encryptor/README.md",
         "demo": "/assets/downloads/gpg-encryptor/install.sh"
       }
+    },
+    {
+      "slug": "d-and-d-char-gen",
+      "title": "AD&D Character Generator",
+      "tagline": "A character generator that follows the AD&D player book setup process.",
+      "status": "active",
+      "stack": ["Python", "Tkinter", "RPG Tools"],
+      "problem": "Manual AD&D character setup can be slow and repetitive, especially for new players who are still learning the process.",
+      "approach": "Built a guided generator based on the AD&D player book flow, originally to make character creation easier and more engaging for my son.",
+      "outcome": "A usable early version that mirrors core AD&D character creation steps while making the process faster and easier to follow.",
+      "lessons": "Mapping tabletop rules into software works best when each step is explicit, validated, and easy to revisit.",
+      "year": 2026,
+      "featured": false,
+      "links": {
+        "repo": "https://github.com/pythonpydev/d_and_d_char_gen"
+      }
+    },
+    {
+      "slug": "sams-cpp-2005-source-code",
+      "title": "Sams C++ 2005 Source Code",
+      "tagline": "A student resource with extracted C++ examples organized by chapter.",
+      "status": "maintained",
+      "stack": ["Python", "C++", "Text Processing"],
+      "problem": "Working through a textbook is easier when code examples are available as separate files instead of embedded in long chapter text.",
+      "approach": "Used a small extraction script to iterate through chapter material and split example code into individual .cpp files, organized by chapter for quick access.",
+      "outcome": "A structured repository students can browse by chapter to find, compile, and experiment with the examples more easily.",
+      "lessons": "Turning reference material into a learning resource often comes down to practical organization and fast lookup, not complex tooling.",
+      "year": 2026,
+      "featured": false,
+      "links": {
+        "repo": "https://github.com/pythonpydev/SamsCPP2005_source_code"
+      }
     }
   ]
 }
