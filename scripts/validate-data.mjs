@@ -36,8 +36,12 @@ const ProjectSchema = z.object({
   featured: z.boolean(),
   links: z.object({
     repo: z.url().optional(),
-    demo: z.url().optional(),
-    writeup: z.url().optional()
+    demo: z.string().refine((v) => v.startsWith("/") || z.url().safeParse(v).success, {
+      message: "must be an absolute URL or a site-relative path starting with /"
+    }).optional(),
+    writeup: z.string().refine((v) => v.startsWith("/") || z.url().safeParse(v).success, {
+      message: "must be an absolute URL or a site-relative path starting with /"
+    }).optional()
   })
 });
 

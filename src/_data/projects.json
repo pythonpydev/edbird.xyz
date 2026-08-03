@@ -13,8 +13,8 @@
       "year": 2026,
       "featured": true,
       "links": {
-        "writeup": "https://edbird.xyz/assets/downloads/gpg-encryptor/README.md",
-        "demo": "https://edbird.xyz/assets/downloads/gpg-encryptor/install.sh"
+        "writeup": "/assets/downloads/gpg-encryptor/README.md",
+        "demo": "/assets/downloads/gpg-encryptor/install.sh"
       }
     }
   ]

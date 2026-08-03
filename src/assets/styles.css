@@ -75,6 +75,13 @@ body {
   border-bottom-color: var(--accent);
 }
 
+.nav-list a:focus-visible {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .hero {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -228,6 +235,11 @@ a {
 
 a:hover {
   color: var(--text);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .theme-swatch {

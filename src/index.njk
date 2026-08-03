@@ -1,13 +1,14 @@
 ---
 layout: layouts/base.njk
 title: Home
-description: Deputy Dean at University College Birmingham, with a background in computing, software development, and postgraduate research.
+description: Personal software projects, experiments, and practical tools by Ed Bird.
 ---
 <section class="hero">
   <p class="badge">{{ site.tagline }}</p>
   <h1 class="brand-name">{{ profile.name }}</h1>
   <p class="role-line">{{ profile.role }}</p>
-  <p class="bio-text">{{ profile.bioShort }}</p>
+  <p class="bio-text">This site is a place for me to share my software development projects and websites.</p>
+  <p class="meta-line"><a href="/projects/">Browse projects and websites →</a></p>
 </section>
 
 <section>
@@ -25,6 +26,16 @@ description: Deputy Dean at University College Birmingham, with a background in 
         </div>
       </article>
     {% endfor %}
+    <article class="card span-6">
+      <h3><a href="/demos/">Experimental Web Themes</a></h3>
+      <p class="tagline">CSS theme experiments based on studio-lab palettes.</p>
+      <p class="meta-line"><strong class="status-maintained">experimental</strong> · 2026</p>
+      <div class="stack">
+        <span>CSS</span>
+        <span>Themes</span>
+        <span>Experiments</span>
+      </div>
+    </article>
   </div>
   <p class="meta-line"><a href="/projects/">View all projects →</a></p>
 </section>

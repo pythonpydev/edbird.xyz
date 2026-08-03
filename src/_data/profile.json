@@ -1,21 +1,20 @@
 {
   "name": "Ed Bird",
-  "role": "Higher Education",
+  "role": "Personal Projects",
   "location": "Birmingham, United Kingdom",
-  "bioShort": "Working in Higher Education with a background in computing and management.",
-  "careerNarrative": "I began my career in management, before studying computing and working in software development. I then went on to study postgraduate qualifications in Computer Science and an MBA, and have managed computing, management, and business departments in the education sector, both in Further and Higher Education.",
+  "bioShort": "I build and share personal software projects, with a background in computing and management.",
+  "careerNarrative": "I began in management, then moved into computing and software development. Over time I have focused on building practical tools and project-based systems that are clear, useful, and maintainable.",
   "qualifications": [
     "BSc Computer Studies",
     "MSc Computer Science",
-    "MBA",
-    "PGCE",
-    "Senior Fellow of the Higher Education Academy"
+    "MBA"
   ],
   "researchInterests": [
-    "Business processes",
-    "AI in education"
+    "Workflow design",
+    "Developer tooling",
+    "Applied AI"
   ],
-  "focusNow": "Working in higher education, with a continued focus on computing.",
+  "focusNow": "Building personal software projects and shipping practical experiments.",
   "contact": [
     {
       "label": "GitHub",

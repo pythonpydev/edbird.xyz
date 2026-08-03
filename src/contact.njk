@@ -5,13 +5,16 @@ permalink: /contact/index.html
 ---
 <section class="hero">
   <h1 class="brand-name">Contact</h1>
-  <p class="bio-text">If a project aligns with your goals, reach out.</p>
+  <p class="bio-text">This is mostly a maker log, but feel free to get in touch.</p>
+  <p class="meta-line">Questions, feedback, and bug reports are always useful.</p>
 </section>
 
 <section class="panel">
+  <h2 class="section-title">Ways to connect</h2>
   <ul class="list-reset mono-list">
     {% for method in profile.contact %}
       <li><a href="{{ method.url }}">{{ method.label }}</a></li>
     {% endfor %}
   </ul>
+  <p class="meta-line">If you are writing about a project, include the project name and a quick summary.</p>
 </section>

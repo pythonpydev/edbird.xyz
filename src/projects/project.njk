@@ -5,7 +5,8 @@ pagination:
   size: 1
   alias: project
 permalink: "/projects/{{ project.slug }}/index.html"
-title: "{{ project.title }}"
+eleventyComputed:
+  title: "{{ project.title }}"
 ---
 <section class="hero">
   <p class="badge">Project detail</p>

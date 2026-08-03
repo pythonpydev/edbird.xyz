@@ -7,7 +7,10 @@
     <meta name="description" content="{{ (description or profile.bioShort) | safe }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600;700&family=VT323&display=swap"
+    />
     <link rel="stylesheet" href="/assets/styles.css" />
   </head>
   <body class="{{ bodyClass or '' }}">
@@ -31,7 +34,11 @@
     <footer class="site-footer frame">
       <p>{{ profile.name }} · {{ profile.role }}</p>
       <ul class="footer-links">
-        <li><a href="/demos/">CSS theme experiments</a></li>
+        <li>
+          <a href="https://buymeacoffee.com/pydev1" aria-label="Buy me a coffee">
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="120" height="33" style="display:block; height:auto; width:120px;" />
+          </a>
+        </li>
       </ul>
     </footer>
   </body>
