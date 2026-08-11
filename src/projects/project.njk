@@ -45,6 +45,8 @@ eleventyComputed:
     <ul class="mono-list">
       {% if project.links.repo %}<li><a href="{{ project.links.repo }}">Repository</a></li>{% endif %}
       {% if project.links.demo %}<li><a href="{{ project.links.demo }}">Demo / Download</a></li>{% endif %}
+      {% if project.links.downloadWindows %}<li><a href="{{ project.links.downloadWindows }}">Download for Windows (.exe)</a></li>{% endif %}
+      {% if project.links.downloadLinux %}<li><a href="{{ project.links.downloadLinux }}">Download for Linux (.deb)</a></li>{% endif %}
       {% if project.links.writeup %}<li><a href="/projects/{{ project.slug }}/readme/">README.md</a></li>{% endif %}
     </ul>
   </aside>

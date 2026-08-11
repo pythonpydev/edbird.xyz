@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "slug": "document-renamer",
+      "title": "Document Renamer",
+      "tagline": "A desktop app that renames ebooks and documents by identifying their title, author, or journal metadata via the Claude API.",
+      "status": "active",
+      "stack": ["Python", "Tkinter", "Claude API", "PyInstaller"],
+      "problem": "A folder of ebooks or downloaded PDFs is often full of cryptic or inconsistent filenames, making them hard to browse or file away.",
+      "approach": "Built a tkinter GUI that extracts leading text from each PDF/EPUB/DOCX/etc., sends it to the Claude API to identify title/author (Books) or author/year/keyword (Journals), and renames files into a consistent, configurable pattern. Includes an offline no-API-call fallback, OCR support for scanned PDFs, undo, and a dry-run preview.",
+      "outcome": "A self-contained desktop app (Windows .exe and Linux .deb) that turns a folder of messy filenames into a consistently named, browsable library in one pass.",
+      "lessons": "Batch-renaming tools live or die on trust — dry-run previews and a one-click undo matter as much as the identification logic itself.",
+      "year": 2026,
+      "featured": true,
+      "links": {
+        "writeup": "/assets/downloads/document-renamer/README.md",
+        "downloadWindows": "/assets/downloads/document-renamer/document-renamer-windows.exe",
+        "downloadLinux": "/assets/downloads/document-renamer/document-renamer-linux.deb"
+      }
+    },
+    {
+      "slug": "docswap",
+      "title": "DocSwap",
+      "tagline": "A batch document converter GUI that converts between docx, rtf, txt, md, html, epub, latex, and pdf using pandoc.",
+      "status": "active",
+      "stack": ["Python", "Tkinter", "pandoc", "PyInstaller"],
+      "problem": "Converting documents between formats like docx, markdown, html, and pdf usually means juggling pandoc command-line flags one file at a time.",
+      "approach": "Built a tkinter GUI on top of pandoc supporting batch conversion of files or whole folders, per-file output renaming, clickable results that open the converted file directly, and PDF export that prefers a LaTeX engine with a clearly flagged wkhtmltopdf fallback. Packaged as native installers for Debian/Ubuntu, Arch, and Fedora, with a Windows installer built from the same source.",
+      "outcome": "A cross-platform desktop app that turns a folder of mixed-format documents into the target format in one batch, without touching the command line.",
+      "lessons": "A thin GUI over a trusted CLI tool (pandoc) is mostly about batch ergonomics and clear dependency messaging (e.g. the PDF engine quality warning), not reimplementing the conversion logic itself.",
+      "year": 2026,
+      "featured": true,
+      "links": {
+        "repo": "https://github.com/pythonpydev/DocSwap",
+        "writeup": "/assets/downloads/docswap/README.md",
+        "downloadLinux": "/assets/downloads/docswap/docswap-linux.deb"
+      }
+    },
+    {
       "slug": "gpg-encryptor",
       "title": "GPG Encryptor",
       "tagline": "A point-and-click Tkinter GUI for encrypting and decrypting files and folders with GPG.",
