@@ -41,6 +41,15 @@ eleventyComputed:
       {% endfor %}
     </div>
 
+    {% if project.tags.length %}
+      <h2 class="section-title">Tags</h2>
+      <div class="tags">
+        {% for tag in project.tags %}
+          <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <h2 class="section-title">Links</h2>
     <ul class="mono-list">
       {% if project.links.repo %}<li><a href="{{ project.links.repo }}">Repository</a></li>{% endif %}

@@ -51,6 +51,23 @@ export default function (eleventyConfig) {
     return String(value);
   });
 
+  eleventyConfig.addFilter("formatDate", (value) => {
+    return new Date(value).toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    });
+  });
+
+  eleventyConfig.addGlobalData("buildDate", () => new Date().toISOString());
+
+  eleventyConfig.addFilter("tagSlug", (tag) => {
+    return String(tag)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  });
+
   return {
     dir: {
       input: "src",

@@ -24,6 +24,13 @@ description: Personal software projects, experiments, and practical tools by Ed 
             <span>{{ item }}</span>
           {% endfor %}
         </div>
+        {% if project.tags.length %}
+          <div class="tags">
+            {% for tag in project.tags %}
+              <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
       </article>
     {% endfor %}
     <article class="card span-6">
@@ -48,6 +55,13 @@ description: Personal software projects, experiments, and practical tools by Ed 
         <h3>{{ milestone.title }}</h3>
         <p class="meta-line"><strong>{{ milestone.date }}</strong></p>
         <p class="tagline">{{ milestone.summary }}</p>
+        {% if milestone.tags.length %}
+          <div class="tags">
+            {% for tag in milestone.tags %}
+              <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
         {% if milestone.link %}<p class="meta-line"><a href="{{ milestone.link }}">View item</a></p>{% endif %}
       </article>
     {% endfor %}

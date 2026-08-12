@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Tags
+permalink: /tags/index.html
+---
+<section class="hero">
+  <h1 class="brand-name">Tags</h1>
+  <p class="bio-text">Browse projects and news by topic.</p>
+</section>
+
+<section class="grid">
+  {% for entry in tags %}
+    <article class="card span-4">
+      <h2><a href="/tags/{{ entry.slug }}/">{{ entry.tag }}</a></h2>
+      <p class="meta-line">{{ entry.projects.length }} project{% if entry.projects.length != 1 %}s{% endif %} · {{ entry.news.length }} news item{% if entry.news.length != 1 %}s{% endif %}</p>
+    </article>
+  {% endfor %}
+</section>

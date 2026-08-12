@@ -15,6 +15,13 @@ permalink: /news/index.html
       <h2>{{ milestone.title }}</h2>
       <p class="meta-line"><strong>{{ milestone.date }}</strong></p>
       <p class="tagline">{{ milestone.summary }}</p>
+      {% if milestone.tags.length %}
+        <div class="tags">
+          {% for tag in milestone.tags %}
+            <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
       {% if milestone.link %}<p class="meta-line"><a href="{{ milestone.link }}">View item</a></p>{% endif %}
     </article>
   {% endfor %}

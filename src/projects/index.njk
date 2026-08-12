@@ -19,6 +19,13 @@ permalink: /projects/index.html
           <span>{{ item }}</span>
         {% endfor %}
       </div>
+      {% if project.tags.length %}
+        <div class="tags">
+          {% for tag in project.tags %}
+            <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
     </article>
   {% endfor %}
 </section>

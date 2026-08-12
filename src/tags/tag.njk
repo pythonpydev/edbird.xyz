@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: tags
+  size: 1
+  alias: entry
+permalink: "/tags/{{ entry.slug }}/index.html"
+eleventyComputed:
+  title: "{{ entry.tag }}"
+---
+<section class="hero">
+  <p class="badge">Tag</p>
+  <h1 class="brand-name">{{ entry.tag }}</h1>
+  <p class="bio-text"><a href="/tags/">← All tags</a></p>
+</section>
+
+{% if entry.projects.length %}
+<section>
+  <h2 class="section-title">Projects</h2>
+  <div class="grid">
+    {% for project in entry.projects %}
+      <article class="card span-6">
+        <h3><a href="/projects/{{ project.slug }}/">{{ project.title }}</a></h3>
+        <p class="tagline">{{ project.tagline }}</p>
+        <p class="meta-line"><strong class="status-{{ project.status }}">{{ project.status }}</strong> · {{ project.year }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if entry.news.length %}
+<section>
+  <h2 class="section-title">News</h2>
+  <div class="grid">
+    {% for milestone in entry.news %}
+      <article class="card span-4">
+        <h3>{{ milestone.title }}</h3>
+        <p class="meta-line"><strong>{{ milestone.date }}</strong></p>
+        <p class="tagline">{{ milestone.summary }}</p>
+        {% if milestone.link %}<p class="meta-line"><a href="{{ milestone.link }}">View item</a></p>{% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

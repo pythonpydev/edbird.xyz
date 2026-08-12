@@ -34,6 +34,7 @@ const ProjectSchema = z.object({
   lessons: z.string().min(1),
   year: z.number().int().min(2000).max(2100),
   featured: z.boolean(),
+  tags: z.array(z.string().min(1)).optional(),
   links: z.object({
     repo: z.url().optional(),
     demo: z.string().refine((v) => v.startsWith("/") || z.url().safeParse(v).success, {
@@ -66,7 +67,8 @@ const MilestoneSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   title: z.string().min(1),
   summary: z.string().min(1),
-  link: z.url().optional()
+  link: z.url().optional(),
+  tags: z.array(z.string().min(1)).optional()
 });
 
 const MilestonesSchema = z.object({

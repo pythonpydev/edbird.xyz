@@ -5,19 +5,22 @@
       "date": "2026-08-12",
       "title": "edbird.xyz Went Live",
       "summary": "Launched edbird.xyz, a personal site showcasing projects, milestones, and websites.",
-      "link": "https://edbird.xyz"
+      "link": "https://edbird.xyz",
+      "tags": ["Web", "Launch"]
     },
     {
       "date": "2026-08-01",
       "title": "Math Landscapes Went Live",
       "summary": "Launched Math Landscapes, an interactive MSC2020-based reference site for exploring mathematics.",
-      "link": "https://www.mathlandscapes.com"
+      "link": "https://www.mathlandscapes.com",
+      "tags": ["Web", "Education", "Launch"]
     },
     {
       "date": "2026-02-01",
       "title": "Pokerdoro (Gamify) Went Live",
       "summary": "Launched Gamify, a poker-themed Pomodoro productivity app with chip rewards and rank progression.",
-      "link": "https://www.pokerdoro.com/"
+      "link": "https://www.pokerdoro.com/",
+      "tags": ["Web", "Games", "Productivity", "Launch"]
     }
   ]
 }
