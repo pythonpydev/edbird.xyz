@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title | safe }} | {{ profile.name }}</title>
     <meta name="description" content="{{ (description or profile.bioShort) | safe }}" />
+    <link rel="icon" type="image/png" href="/assets/cmd_prompt.png" />
+    <link rel="alternate" type="application/rss+xml" title="{{ profile.name }} — Latest News" href="/feed.xml" />
+    <link rel="apple-touch-icon" href="/assets/cmd_prompt.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ title | safe }} | {{ profile.name }}" />
+    <meta property="og:description" content="{{ (description or profile.bioShort) | safe }}" />
+    <meta property="og:image" content="https://edbird.xyz/assets/cmd_prompt.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ title | safe }} | {{ profile.name }}" />
+    <meta name="twitter:description" content="{{ (description or profile.bioShort) | safe }}" />
+    <meta name="twitter:image" content="https://edbird.xyz/assets/cmd_prompt.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

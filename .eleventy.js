@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import MarkdownIt from "markdown-it";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
 export default function (eleventyConfig) {
   const markdownRenderer = new MarkdownIt({
@@ -8,6 +9,8 @@ export default function (eleventyConfig) {
     linkify: true,
     typographer: true
   });
+
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.ignores.add("src/assets/downloads/**");

@@ -1,0 +1,23 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ profile.name }} — Latest News</title>
+    <link>https://edbird.xyz/</link>
+    <atom:link href="https://edbird.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    <description>{{ profile.bioShort }}</description>
+    <language>en</language>
+    {% for milestone in milestones.items %}
+    <item>
+      <title>{{ milestone.title }}</title>
+      <link>{{ milestone.link or "https://edbird.xyz/news/" }}</link>
+      <guid isPermaLink="false">{{ milestone.date }}-{{ milestone.title | slugify }}</guid>
+      <pubDate>{{ milestone.date | dateToRfc822 }}</pubDate>
+      <description>{{ milestone.summary }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
