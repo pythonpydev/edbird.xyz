@@ -14,8 +14,8 @@
       "featured": true,
       "links": {
         "writeup": "/assets/downloads/document-renamer/README.md",
-        "downloadWindows": "/assets/downloads/document-renamer/document-renamer-windows.exe",
-        "downloadLinux": "/assets/downloads/document-renamer/document-renamer-linux.deb"
+        "downloadWindows": "https://github.com/pythonpydev/edbird.xyz/releases/download/document-renamer-v1/document-renamer-windows.exe",
+        "downloadLinux": "https://github.com/pythonpydev/edbird.xyz/releases/download/document-renamer-v1/document-renamer-linux.deb"
       }
     },
     {
@@ -67,7 +67,7 @@
       "featured": false,
       "links": {
         "writeup": "/assets/downloads/pdf-to-markdown/README.md",
-        "downloadWindows": "/assets/downloads/pdf-to-markdown/pdf-to-markdown-windows.exe"
+        "downloadWindows": "https://github.com/pythonpydev/edbird.xyz/releases/download/pdf-to-markdown-v1/pdf-to-markdown-windows.exe"
       }
     },
     {
