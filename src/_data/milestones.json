@@ -2,6 +2,12 @@
   "curatedOnly": true,
   "items": [
     {
+      "date": "2026-08-12",
+      "title": "edbird.xyz Went Live",
+      "summary": "Launched edbird.xyz, a personal site showcasing projects, milestones, and websites.",
+      "link": "https://edbird.xyz"
+    },
+    {
       "date": "2026-08-01",
       "title": "Math Landscapes Went Live",
       "summary": "Launched Math Landscapes, an interactive MSC2020-based reference site for exploring mathematics.",
