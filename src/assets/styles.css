@@ -13,6 +13,23 @@
   --font-vt323: "VT323", "Courier New", monospace;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --surface: #0a0d0a;
+    --text: #b8c2bc;
+    --muted: #6f7a74;
+    --accent: #32ff6a;
+    --accent-strong: #32ff6a;
+    --border: #32ff6a;
+  }
+
+  :root:not([data-theme="light"]) .brand-icon {
+    background-color: #32ff6a;
+    border-radius: 20%;
+  }
+}
+
 :root[data-theme="dark"] {
   --bg: #000000;
   --surface: #0a0d0a;

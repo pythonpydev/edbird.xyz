@@ -26,8 +26,8 @@
     <script>
       (function () {
         var stored = localStorage.getItem("theme");
-        if (stored === "dark") {
-          document.documentElement.setAttribute("data-theme", "dark");
+        if (stored === "dark" || stored === "light") {
+          document.documentElement.setAttribute("data-theme", stored);
         }
       })();
     </script>
@@ -76,21 +76,21 @@
       (function () {
         var toggle = document.getElementById("theme-toggle");
         var root = document.documentElement;
+        var media = window.matchMedia("(prefers-color-scheme: dark)");
 
         function isDark() {
-          return root.getAttribute("data-theme") === "dark";
+          var explicit = root.getAttribute("data-theme");
+          if (explicit === "dark") return true;
+          if (explicit === "light") return false;
+          return media.matches;
         }
 
         toggle.setAttribute("aria-pressed", String(isDark()));
 
         toggle.addEventListener("click", function () {
-          if (isDark()) {
-            root.removeAttribute("data-theme");
-            localStorage.setItem("theme", "light");
-          } else {
-            root.setAttribute("data-theme", "dark");
-            localStorage.setItem("theme", "dark");
-          }
+          var next = isDark() ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          localStorage.setItem("theme", next);
           toggle.setAttribute("aria-pressed", String(isDark()));
         });
       })();
