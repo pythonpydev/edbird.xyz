@@ -49,6 +49,13 @@ body {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-icon {
+  height: 2rem;
+  width: auto;
 }
 
 .nav-list {
