@@ -54,6 +54,23 @@
       }
     },
     {
+      "slug": "pdf-to-markdown",
+      "title": "PDF to Markdown",
+      "tagline": "A small command-line tool that converts a PDF file into a simple Markdown file.",
+      "status": "active",
+      "stack": ["Python", "pdfplumber", "PyInstaller", "Inno Setup"],
+      "problem": "Converting a PDF's text into a clean, editable Markdown file usually means copy-pasting and manually fixing line breaks and bullets.",
+      "approach": "Built a script on top of pdfplumber that extracts text page by page, normalises bullet-like lines into Markdown list syntax, and collapses stray blank lines. Packaged as a standalone Windows executable with PyInstaller and wrapped in an Inno Setup installer with an optional PATH entry.",
+      "outcome": "A one-command converter that turns a PDF into a readable Markdown file, distributed as a Windows installer with no Python required on the target machine.",
+      "lessons": "Even a small single-file script benefits from a proper installer (Start Menu entry, uninstaller, optional PATH) once it's meant to be shared beyond your own machine.",
+      "year": 2026,
+      "featured": false,
+      "links": {
+        "writeup": "/assets/downloads/pdf-to-markdown/README.md",
+        "downloadWindows": "/assets/downloads/pdf-to-markdown/pdf-to-markdown-windows.exe"
+      }
+    },
+    {
       "slug": "d-and-d-char-gen",
       "title": "AD&D Character Generator",
       "tagline": "A character generator that follows the AD&D player book setup process.",
