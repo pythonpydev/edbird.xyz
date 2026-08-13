@@ -28,6 +28,7 @@ const ProjectSchema = z.object({
   tagline: z.string().min(1),
   status: z.enum(["active", "maintained", "archived"]),
   stack: z.array(z.string().min(1)).min(1),
+  background: z.string().min(1).optional(),
   problem: z.string().min(1),
   approach: z.string().min(1),
   outcome: z.string().min(1),

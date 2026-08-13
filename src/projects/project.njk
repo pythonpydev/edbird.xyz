@@ -20,6 +20,11 @@ eleventyComputed:
 
 <section class="split">
   <article class="panel">
+    {% if project.background %}
+      <h2 class="section-title">Background</h2>
+      <p class="bio-text">{{ project.background }}</p>
+    {% endif %}
+
     <h2 class="section-title">Problem</h2>
     <p class="bio-text">{{ project.problem }}</p>
 

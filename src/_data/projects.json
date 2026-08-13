@@ -44,6 +44,7 @@
       "tagline": "A point-and-click Tkinter GUI for encrypting and decrypting files and folders with GPG.",
       "status": "active",
       "stack": ["Python", "Tkinter", "GPG", "pipx"],
+      "background": "GPG (GNU Privacy Guard) is free, open-source encryption software based on the OpenPGP standard. It can encrypt a file with a password so only someone who knows it can open it, or encrypt it to a recipient's public key so only their private key can decrypt it, and it can also sign files to prove they came from you and haven't been altered. It's the same technology behind encrypted email and verifying software downloads. On Windows, the closest equivalent is Gpg4win, which bundles the GPG engine with Kleopatra, a GUI for key management and encryption — more general-purpose than this tool, but the natural alternative if you're not on Linux.",
       "problem": "Encrypting and decrypting files with GPG from the command line is error-prone for routine, repeated tasks like backups and one-off file sharing.",
       "approach": "Built a desktop GUI on top of GPG supporting recipient, password, and tar-password encryption modes, plus matching decrypt and tar-restore workflows, with dry-run previews and progress tracking. Packaged for one-command installation via pipx with a native desktop launcher.",
       "outcome": "A self-contained Linux desktop app installable with a single script, giving GPG encryption a proper GUI instead of remembering flag combinations.",
